@@ -1,6 +1,6 @@
-# sql-showcase1# security log analysis — SQL Projekt
+security log analysis moj SQL Projekt
 
-SQL projekt u kojem analiziram sumnjive pokušaje prijave (login) koristeći upite na bazi podataka.
+SQL projekt u kojem analiziram sumnjive pokušaje logina koristeći upite na bazi podataka.
 
 ## O projektu
 Napravila sam ovo da vježbam SQL kroz realan scenarij a to je analiziranje login pokušaja kako bih otkrila moguće prijetnje kao što su brute force napadi, pokušaji hakiranja više naloga i prijave iz sumnjivih lokacija.
