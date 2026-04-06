@@ -27,7 +27,7 @@ JOIN devices d ON l.devices_id = d.device_id
 WHERE success = FALSE
 GROUP BY d.device_type;
 
--- Detect possible brute force attacks
+-- Onda detektujem brute force napade
 SELECT u.username, COUNT(*) AS failed_attempts
 FROM login_attempts left
 JOIN users u ON l.user_id = u.user_id
@@ -37,7 +37,7 @@ HAVING COUNT(*) >= 2
 ORDER BY failed_attempts DESC;
 
 
--- Detect users logging in from multiple countries
+-- Provjeravam koji useri iz vise država se pokušavaju ulogovati, VPN
 SELECT u.username, COUNT(DISTINCT country) AS countries_used
 FROM login_attempts l 
 JOIN users u ON l.user_id = u.user_id
